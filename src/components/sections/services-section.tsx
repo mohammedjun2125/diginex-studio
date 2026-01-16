@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { Code, PenTool, BarChart, Search, Rocket } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
