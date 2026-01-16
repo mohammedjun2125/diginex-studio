@@ -1,3 +1,28 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "blog-ai-future",
+      "description": "Abstract network of glowing nodes representing artificial intelligence.",
+      "imageUrl": "https://images.unsplash.com/photo-1604011237320-8e0506614fdf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhYnN0cmFjdCUyMHRlY2hub2xvZ3l8ZW58MHx8fHwxNzY4NTUyNTgyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract technology"
+    },
+    {
+      "id": "blog-design-trends",
+      "description": "Colorful geometric shapes and patterns representing modern design.",
+      "imageUrl": "https://images.unsplash.com/photo-1547306720-27503fd01ecf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxnZW9tZXRyaWMlMjBhYnN0cmFjdHxlbnwwfHx8fDE3Njg1MzcyMzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "geometric abstract"
+    },
+    {
+      "id": "blog-seo-mastery",
+      "description": "A magnifying glass over a computer screen showing analytics.",
+      "imageUrl": "https://images.unsplash.com/photo-1608222351212-18fe0ec7b13b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGFuYWx5dGljc3xlbnwwfHx8fDE3Njg1NjY4Njd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "business analytics"
+    },
+    {
+      "id": "blog-web-performance",
+      "description": "A futuristic speedometer indicating fast loading times.",
+      "imageUrl": "https://images.unsplash.com/photo-1742869028490-48ce1cc72aae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c3BlZWQlMjBmdXR1cmlzdGljfGVufDB8fHx8MTc2ODU3MzYyMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "speed futuristic"
+    }
+  ]
 }
