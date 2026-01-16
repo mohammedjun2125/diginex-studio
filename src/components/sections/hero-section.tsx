@@ -1,7 +1,16 @@
+"use client";
+
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import { InteractiveHeroObject } from "../3d/interactive-hero-object";
+import { Skeleton } from "@/components/ui/skeleton";
+
+const InteractiveHeroObject = dynamic(() => import('../3d/interactive-hero-object').then(mod => mod.InteractiveHeroObject), {
+  ssr: false,
+  loading: () => <Skeleton className="absolute inset-0 z-0 h-full w-full opacity-50" />,
+});
+
 
 export function HeroSection() {
   return (

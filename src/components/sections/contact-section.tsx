@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 export function ContactSection() {
@@ -23,7 +24,14 @@ export function ContactSection() {
           </div>
           <div className="hidden lg:block relative w-full aspect-square rounded-xl bg-primary/10 overflow-hidden">
              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent"></div>
-             <img src="https://picsum.photos/seed/contact/600/600" data-ai-hint="abstract geometric" alt="Abstract art" className="h-full w-full object-cover opacity-30 mix-blend-soft-light"/>
+             <Image 
+                src="https://picsum.photos/seed/contact/600/600" 
+                data-ai-hint="abstract geometric" 
+                alt="Abstract art" 
+                fill
+                sizes="(max-width: 1024px) 400px, 600px"
+                className="object-cover opacity-30 mix-blend-soft-light"
+             />
           </div>
         </div>
       </div>
