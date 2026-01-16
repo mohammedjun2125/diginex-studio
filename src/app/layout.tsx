@@ -7,8 +7,17 @@ import { cn } from '@/lib/utils';
 import { CursorFollower } from '@/components/ui/cursor-follower';
 
 export const metadata: Metadata = {
-  title: 'Diginex Studio',
+  title: 'DIGINEXSTUDIO',
   description: 'Creative Digital Solutions',
+  manifest: '/site.webmanifest',
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
+  themeColor: '#0f172a',
+  other: {
+    "msapplication-config": "/browserconfig.xml",
+  }
 };
 
 export default function RootLayout({
