@@ -17,10 +17,10 @@ export function HeroSection() {
     <section className="relative h-[80vh] min-h-[500px] w-full">
       <InteractiveHeroObject />
       <div className="container relative z-10 flex h-full max-w-7xl flex-col items-center justify-center text-center">
-        <h1 className="font-headline text-4xl font-bold tracking-tighter text-glow sm:text-6xl md:text-7xl lg:text-8xl">
+        <h1 className="font-headline text-4xl font-bold tracking-tighter text-glow sm:text-5xl md:text-6xl lg:text-7xl">
           Crafting Digital Excellence
         </h1>
-        <p className="mx-auto mt-6 max-w-[700px] text-lg text-muted-foreground md:text-xl">
+        <p className="mx-auto mt-6 max-w-[700px] text-base text-muted-foreground sm:text-lg md:text-xl">
           Diginex Studio builds bespoke web solutions that merge cutting-edge
           technology with stunning design, delivering experiences that captivate
           and convert.

@@ -7,7 +7,7 @@ export default function PrivacyPolicyPage() {
   return (
     <article className="prose prose-invert max-w-none text-foreground/90 prose-headings:font-headline prose-headings:text-foreground prose-headings:text-glow prose-a:text-primary prose-a:transition-colors hover:prose-a:text-primary/80 prose-strong:text-foreground">
       <h1>Privacy Policy</h1>
-      <p className="lead">Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+      <p className="lead">Last updated: July 22, 2024</p>
       
       <h2>1. Information We Collect</h2>
       <p>
