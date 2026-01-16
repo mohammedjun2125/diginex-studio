@@ -3,53 +3,12 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-
-const plans = [
-  {
-    name: "Starter",
-    price: "$499",
-    description: "For small projects and startups.",
-    features: [
-      "Landing Page",
-      "Basic SEO",
-      "Contact Form",
-      "Mobile Responsive",
-    ],
-    isPopular: false,
-  },
-  {
-    name: "Business",
-    price: "$1299",
-    description: "For growing businesses and professionals.",
-    features: [
-      "Multi-page Website",
-      "Advanced SEO",
-      "CMS Integration",
-      "Priority Support",
-      "Analytics",
-    ],
-    isPopular: true,
-  },
-  {
-    name: "Enterprise",
-    price: "Custom",
-    description: "For large-scale applications and custom needs.",
-    features: [
-      "Custom Solution",
-      "Dedicated Team",
-      "24/7 Support",
-      "Advanced Security",
-      "API Integration",
-    ],
-    isPopular: false,
-  },
-];
+import { plans } from "@/lib/pricing-plans";
 
 export const metadata = {
   title: "Pricing Plans | Diginex Studio",
   description: "Flexible and transparent pricing plans for your business needs.",
 };
-
 
 export default function PricingPage() {
   return (
@@ -86,18 +45,24 @@ export default function PricingPage() {
             </CardHeader>
             <CardContent className="flex-1">
               <ul className="space-y-4">
-                {plan.features.map((feature) => (
+                {plan.features.slice(0, 4).map((feature) => (
                   <li key={feature} className="flex items-center">
                     <Check className="mr-3 h-5 w-5 text-primary" />
                     <span>{feature}</span>
                   </li>
                 ))}
+                 {plan.features.length > 4 && (
+                    <li className="flex items-center text-muted-foreground">
+                        <Check className="mr-3 h-5 w-5 text-transparent" />
+                        <span>And more...</span>
+                    </li>
+                 )}
               </ul>
             </CardContent>
             <CardFooter>
               <Button asChild className="w-full" variant={plan.isPopular ? "default" : "secondary"}>
-                <Link href="/contact">
-                  {plan.name === "Enterprise" ? "Contact Us" : "Get Started"}
+                <Link href={`/pricing/${plan.slug}`}>
+                  Learn More
                 </Link>
               </Button>
             </CardFooter>
