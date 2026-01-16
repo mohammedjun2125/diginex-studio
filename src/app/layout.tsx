@@ -11,7 +11,11 @@ export const metadata: Metadata = {
   description: 'Creative Digital Solutions',
   manifest: '/site.webmanifest',
   icons: {
-    icon: '/favicon.ico',
+    icon: [
+      { url: '/favicon.ico', sizes: 'any', type: 'image/x-icon' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
     apple: '/apple-touch-icon.png',
   },
   themeColor: '#0f172a',
